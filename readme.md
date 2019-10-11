@@ -1,8 +1,10 @@
-git clone this repo
+git clone this repository
+
 project setup
-1. composer update
-2. php artisan migrate
-3. create an user 
+
+1. ```composer update```
+2. ```php artisan migrate```
+3. ```create an user ```
 
 Email setup 
 
@@ -10,14 +12,16 @@ Email setup
 2. go to this link  https://security.google.com/settings/security/apppasswords     and create app
 3. copy app password
 4. .env file change the following code
+	```
 	MAIL_DRIVER=smtp
 	MAIL_HOST=smtp.gmail.com
 	MAIL_PORT=587
 	MAIL_USERNAME=helaluddin.bru@gmail.com(your mail address)
 	MAIL_PASSWORD=your_app_password
 	MAIL_ENCRYPTION=tls
+      ```
 5. in app/config/mail.php file change the following code
-	
+```
 	return [
 
 	'driver' => env('MAIL_DRIVER', 'smtp'),
@@ -40,12 +44,15 @@ Email setup
 	'log_channel' => env('MAIL_LOG_CHANNEL'),
 	];
 
-
+```
 5. paste the following code  in app\route\web.php  
+    ```
 	Route::get('/send/mail', 'HomeController@showMail');
 	Route::post('/send/mail', 'HomeController@sendmail')->name('sendmail');
+    ```
 
 6. make 2 function in HomeController here my code
+  ```
     public function showMail(){
         return view('show_mail');
     }
@@ -65,7 +72,7 @@ Email setup
              $message->from('helaluddin.bru@gmail.com','Helal Uddin');
           });
     }
-
+``` 
 7. create two view 
 	a. show_mail 
 	b. mail (this name should not be change)
