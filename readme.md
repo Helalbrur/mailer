@@ -8,7 +8,7 @@ project setup
 
 Email setup 
 
-1. First need to set up 2 step verification on in email
+1. First need to set up 2 step verification on your email
 2. go to this link  https://security.google.com/settings/security/apppasswords     and create app
 3. copy app password
 4. .env file change the following code
