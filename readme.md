@@ -74,6 +74,8 @@ Email setup
     }
 ``` 
 7. create two view 
+
 	a. show_mail 
+	
 	b. mail (this name should not be change)
 
