@@ -75,7 +75,7 @@ Email setup
 ``` 
 7. create two view 
 
-	a. show_mail 
+	a. show_mail.blade.php 
 	
-	b. mail (this name should not be change)
+	b. mail.blade.php (this name should not be change)
 
