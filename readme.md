@@ -53,6 +53,9 @@ Email setup
 
 6. make 2 function in HomeController here my code
   ```
+  use Mail;
+  use Illuminate\Support\Facades\Input;
+  
     public function showMail(){
         return view('show_mail');
     }
